@@ -244,3 +244,14 @@ display: ;
   margin-right: 5px;
 }
 /** End Contact Style **/
+
+@media screen and (max-width: 768px) {
+  .duration {
+    min-height: 90vh;
+    /* margin-top: 60px; */
+    /* padding-top: 90px; */
+  }
+  .duration .durationShadow .row {
+    margin-top: 50px;
+  }
+}
