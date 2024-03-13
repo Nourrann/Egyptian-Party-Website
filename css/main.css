@@ -98,6 +98,10 @@ body {
 .singers {
   width: 50%;
   margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.singers .container {
+  padding: 0;
 }
 .singers .toggle {
   background-color: rgba(214, 46, 51, 0.6);
@@ -105,6 +109,7 @@ body {
   cursor: pointer;
   padding: 10px;
   margin: 0;
+  border: 1px solid #777;
 }
 .singers .inner {
   background-color: #ccc;
