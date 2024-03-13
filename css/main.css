@@ -1,0 +1,241 @@
+/*! Start General Styles !*/
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: 0; */
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/*! End General Styles !*/
+
+/** Start Header Style **/
+.coverShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+.header {
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("../imgs/events-heavenly-header.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.header .headerContent {
+  color: white;
+  /* min-height: 100vh; */
+}
+.header .headerContent h1 {
+  font-size: 60px;
+}
+.openNav {
+  position: absolute;
+  top: 45%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  left: 240px;
+  color: #111;
+}
+/** End Header Style **/
+
+/*^ Start SideNav Style ^*/
+.header .sideNavBar {
+  display: block;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -230px;
+  background-color: #111;
+  z-index: 1;
+  width: 230px;
+  transition: 0.4s all;
+
+  /* margin-bottom: 200px; */
+}
+
+.header .close {
+  display: block;
+  /* position: absolute; */
+  /* top: 0;
+  right: 25px; */
+  margin-left: 160px;
+  font-size: 36px;
+  /* margin-left: 50px; */
+  padding: 20px 8px 20px 32px;
+}
+.header .sideNavBar .close {
+  cursor: pointer;
+  padding: 20px 8px 20px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: white;
+  transition: ease 0.3s;
+}
+.header .sideNavBar a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: white;
+  transition: ease 0.3s;
+}
+.header .sideNavBar a:hover,
+.header .sideNavBar .close:hover {
+  color: rgba(214, 46, 51, 0.5);
+}
+/*^ End SideNav Style ^*/
+
+/*& Start Singers Style &*/
+.singers {
+  width: 50%;
+  margin: 100px auto;
+}
+.singers .toggle {
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+.singers .inner {
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+  display: none;
+}
+.singers .inner.first {
+  display: block;
+}
+/* .singers .inner.first{
+display: ;
+} */
+/*& End Singers Style &*/
+
+/*^ Start Duration Style ^*/
+.duration {
+  padding-block: 100px;
+  min-height: 40vh;
+  text-align: center;
+  position: relative;
+  background-image: url("../imgs/invitation-2508607__340.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.durationShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+.duration .durationShadow .row {
+  min-height: 40vh;
+}
+.duration .durationShadow .box {
+  border: 1px solid white;
+  padding: 50px;
+}
+/*^ End Duration Style ^*/
+
+/** Start Contact Style **/
+.contact {
+  padding-block: 70px;
+}
+.contact h2 {
+  font-size: 35px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+.contact h3 {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact p {
+  line-height: 26px;
+  color: #777;
+}
+.contact .info {
+  list-style: none;
+}
+.contact .socialIcons {
+  margin-top: 30px;
+}
+.contact .info li {
+  display: flex;
+  gap: 1rem;
+}
+.contact .socialIcons span {
+  cursor: pointer;
+  color: #777;
+  display: inline-block;
+  line-height: 18px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin-right: 15px;
+  border: 1px #999 solid;
+  padding: 10px;
+  text-align: center;
+  transition: ease 0.2s;
+}
+.contact .socialIcons span:hover {
+  background-color: rgba(214, 46, 51);
+  color: white;
+}
+.contact .info li p {
+  display: inline;
+  color: white;
+}
+
+.contact .info {
+  background-color: rgba(214, 46, 51, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.contact .contactUsForm input {
+  padding: 5px 15px;
+  width: 100%;
+  border: 2px #ccc solid;
+  transition: ease 0.2s;
+}
+.contact .contactUsForm textarea {
+  padding: 5px 15px;
+  width: 100%;
+  resize: none;
+  border: 2px #ccc solid;
+  transition: ease 0.2s;
+}
+.contact .contactUsForm input:focus,
+.contact .contactUsForm textarea:focus {
+  outline: none;
+  border: 2px solid rgba(214, 46, 51);
+}
+.contact .contactUsForm #counter {
+  color: rgba(214, 46, 51);
+  font-weight: bolder;
+  font-size: 20px;
+  margin-right: 5px;
+}
+/** End Contact Style **/
